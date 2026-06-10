@@ -1,0 +1,337 @@
+/* Reset some default styles */
+html {
+    height:100%;
+    line-height: 1.3;
+}
+
+body, h1 {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Global styles */
+body {
+    /* font-family: 'Open Sans', sans-serif; */
+    /* font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif, Apple Color Emoji, "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; */
+    font-family: 'Georgia';
+    /* font-size: 1rem; */
+    /* font-weight: 300; */
+    letter-spacing: 0.1px;
+    background-color: #f0f0f0;
+    position: relative;
+}
+
+header {
+    /* font-family: 'Roboto'; */
+    background-color: #373737; /*Dark: 8b959e*/
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    top: 0;
+    position: sticky;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 6px;
+}
+
+h3 {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+ul li p {
+    /* display: list-item; */
+    /* list-style-type: circle; */
+    /* list-style-position: inside; */
+    /* line-height: 1; */
+    /* border: 0.8px solid grey; */
+    /* border-radius: 0px; */
+    /* padding: 8px;  */
+    /* box-shadow: 0 0px 4px rgba(0, 0, 0, 0.2); */
+    margin-bottom: 8px;
+    /* margin-left: 20px; */
+}
+
+ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    max-width: min(1100px, 75%);
+    /* max-height: 80%; */
+    margin: 20px auto 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    min-height: 70vh;
+}
+
+research-main {
+    max-width: min(700px, 75%);
+    /* max-height: 80%; */
+    margin: 20px auto 15px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    min-height: 70vh;
+}
+
+footer {
+    text-align: center;
+    background-color: #f0f0f000;
+    color: #fff;
+    margin: 10px;
+    position: sticky;
+    width: calc(100% - 20px);
+}
+
+/* Additional styling can be added as needed */
+
+/* Style the link color */
+a {
+    color: #006480; /* Change to the color you prefer, e.g., orange (#ff5733) */
+    text-decoration: none;
+}
+
+.friends {
+    float: none;
+    background-color: #f0f0f0;
+    padding: 8px;
+    margin: 5px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #000;
+    font-size: 14px;
+    /* max-width: calc(100% - 150px); */
+}
+
+.friends a {
+    color: #000;
+}
+.friends a:hover {
+    color: #750014;
+    /* font-size: 24px; */
+}
+
+.bread a:hover {
+    color: #000000;
+}
+
+.bread a {
+    color: #ff00ff00;
+}
+
+.hidden {
+    color: #f0f0f000;
+}
+
+/* CSS styles in styles.css */
+.left-aligned {
+    text-align: left;
+}
+
+.right-aligned {
+    text-align: right;
+}
+
+.bread-corner {
+    float: right;
+    margin-right: 3px;
+    font-size: 12px;
+}
+
+.centered {
+    display: block;
+    margin: 0 auto;
+}
+
+p {
+    /* line-height: 1; */
+    margin: 0;
+    padding: 0;
+    /* height: 100%; */
+}
+
+.left-image {
+    float: none; /* Float the image to the left */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* margin-right: 20px; Add margin to create space between the image and text */
+    /* padding: 20px; */
+    max-width: 100%; /* Ensure the image doesn't exceed its container width */
+    /* max-height: 300px; */
+}
+
+/* Style for the content-section (main block) */
+.content-section {
+    display: flex; /* Use flexbox to create a horizontal layout */
+    justify-content: space-between; /* Space items evenly horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    min-height: calc(100vh - 240px);
+}
+
+/* Style for the left-side section */
+.left-section {
+    /* flex-basis: calc(30%); Set the width to 50% minus some spacing */
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-right: 20px; Add spacing between the sections */
+    /* background-color: #f0f0f0; Example background color for differentiation */
+    padding: 20px; /* Add padding to the sections */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+/* Style for the right-side section */
+.right-section {
+    /* flex-basis: calc(70%); Set the width to 50% minus some spacing */
+    max-width: 750px;
+    /* background-color: #f0f0f0; Example background color for differentiation */
+    padding: 20px; /* Add padding to the sections */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.research-section {
+    flex-basis: calc(100%); /* Set the width to 50% minus some spacing */
+    /* background-color: #f0f0f0; Example background color for differentiation */
+    padding: 20px; /* Add padding to the sections */
+    padding-top: 0px;
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+}
+
+.research-section font {
+    color: #750014;
+    /* font-weight: 400; */
+}
+
+/* Style for the main navigation menu */
+.menu {
+    background-color: #8b959e00;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+    position: relative;
+}
+
+.menu a {
+    color: #fff;
+}
+
+/* Style for the dropdown menu */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    top:0;
+    right: 0;
+    background-color: #75001400;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Style for the dropdown menu toggle */
+.dropdownclick input[type="checkbox"] {
+    display: none;
+}
+
+/* Style for the dropdown menu label (custom toggle) */
+.dropdownclick label {
+    cursor: pointer;
+}
+
+/* Style for the dropdown menu */
+.dropdownclick-menu {
+    display: none;
+    position: absolute;
+    /* max-height: 20px; */
+    padding: 10px;
+    max-width: 40%;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Show the dropdown menu when the checkbox is checked */
+.dropdownclick input[type="checkbox"]:checked ~ .dropdownclick-menu {
+    display: block;
+}
+
+.dropdownclick-menu li {
+    margin-right: 10;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.large {
+    font-size: 18px;
+}
+
+.large-envelope {
+    font-size: 30px;
+}
+
+.large-link {
+    font-size: 24px;
+}
+
+.tallmargin {
+    margin-top: 59px;
+}
+
+.links {
+    float: none;
+    text-align: center;
+    /* background-color: #f0f0f0; */
+    padding: 4px;
+    margin: 5px auto;
+    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
+    color: #000;
+    /* max-width: calc(100% - 150px); */
+}
+
+.links a {
+    color: #000;
+    font-size: 18px;
+}
+.links a:hover {
+    color: #750014;
+    /* font-size: 24px; */
+}
+
+.links li {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+/* .red-link a {
+    color: #750014;
+} */
